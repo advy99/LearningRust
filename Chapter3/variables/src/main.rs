@@ -31,14 +31,16 @@ fn main() {
 	
 	let months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
 	
+	println!("Primer mes: {}", months[0]);
+
 	// array con cinco veces tres
-	let a: [3; 5];
+	// let a = [3; 5];
 
 	// array en el que decimos tipo y tamaño
 	let a: [i32; 5] = [1, 2, 3, 4, 5];
 
 	// acceso a un array como toda la vida
-	let primer_elemento = a[0];
-	let segundo_elemento = a[1];
+
+	println!("El primer elemento es {} y el segundo es {}", a[0], a[1]);
 
 }
