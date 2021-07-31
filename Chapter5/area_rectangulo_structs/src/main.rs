@@ -4,8 +4,11 @@ struct Rectangle {
 	height: u32,
 }
 
-fn area(rectangle: &Rectangle) -> u32 {
-	rectangle.width * rectangle.height
+impl Rectangle {
+	fn area(&self) -> u32 {
+		self.width * self.height
+	}
+
 }
 
 fn main() {
@@ -14,7 +17,7 @@ fn main() {
 		height: 50,
 	};
 
-	println!("El area del rectangulo es: {}", area(&rectangle1));
+	println!("El area del rectangulo es: {}", rectangle1.area());
 
 	println!("El rectangulo es: {:#?}", rectangle1);
 
