@@ -17,7 +17,7 @@ fn main() {
 
 // Mal, devolvemos un indice que luego puede modificarse en el string
 fn first_word(string: &str) -> usize {
-    let bytes = string.as_bytes();
+   let bytes = string.as_bytes();
 	let mut position = 0;
 	let mut found = false;
 
@@ -32,11 +32,11 @@ fn first_word(string: &str) -> usize {
 		position = string.len()
 	} 
 
-    position
+	position
 }
 
 fn first_word_good(string: &str) -> &str {
 
-    &string[0..first_word(&string)]
+	&string[0..first_word(&string)]
     
 }
