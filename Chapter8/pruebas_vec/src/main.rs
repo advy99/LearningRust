@@ -21,4 +21,17 @@ fn main() {
 	    None => println!("No hay tercer elemento"),
 	}
 
+	/* let fuera_rango = &vector_inferencia_tipo[100];
+	let fuera_rango = vector_inferencia_tipo.get(100); */
+
+	for element in &vector_inferencia_tipo {
+		println!("{}", element);
+	}
+
+	for element in &mut vector_mutable {
+		print!("Elemento original: {}", element);
+		*element += 50;
+		println!("\tNuevo elemento: {}", element);
+	}
+
 }
