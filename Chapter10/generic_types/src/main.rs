@@ -1,5 +1,4 @@
-// esto de momento no funciona, ya veremos más adelante como
-/* fn largest<T>(lista: &[T]) -> T {
+fn largest<T: PartialOrd + Copy>(lista: &[T]) -> T {
 	let mut largest = lista[0];
 
 	for &number in lista {
@@ -9,7 +8,7 @@
 	}
 
 	largest
-} */
+}
 
 struct Point<T, U> {
 	x: T,
@@ -34,7 +33,7 @@ impl<T, U> Point<T, U> {
 }
 
 fn main() {
-	/* let lista_numeros = vec![23, 34, 63,123, 234010, 3];
+	let lista_numeros = vec![23, 34, 63,123, 234010, 3];
 
 	let largest_number = largest(&lista_numeros);
 
@@ -50,7 +49,7 @@ fn main() {
 	println!("La lista de caracteres es: {:?}", lista_char);
 	
 	println!("El char más grande de la lista es: {}", largest_char);
- */
+
 
 	let p1 = Point {x: 5, y: 10.5};
 	let p2 = Point {x: "Hello", y: 'c'};
